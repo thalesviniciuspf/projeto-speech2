@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+*{
+    margin: 10px 2px;
+}
+body{
+    background-color: red;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+header>h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.473);
+}
+
+nav{
+    background-color: white;
+    padding: 1px;
+}
+
+main{
+    background-color: blue;
+    color: wheat;
+}
+
+section#slide1{
+    color: white;
+}
+
+section#slide2{
+    color:red;
+}
+
+section#slide3{
+    color:white;
+}
+
+footer{
+    background-color: yellow;
+}
