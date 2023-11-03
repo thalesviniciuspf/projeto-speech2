@@ -1,23 +1,33 @@
 @charset 'UTF-8';
 
-*{
-    margin: 10px 2px;
-}
-body{
-    background-color: wheat;
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 15px;
-    margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Shadows+Into+Light&display=swap');
+
+:root{
+    --cor-escura:#1b0f18;
+    --cor-media:#c06cab;
+    --cor-clara:#fff9e2;
+
+    --fonte-titulo: 'Bebas Neue', cursive;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 header{
-    background-color: black;
-    color: white;
-    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: linear-gradient(to bottom, var(--cor-escura), var(--cor-media));
+    padding: 30px;
     font-size: 2em;
 }
 
+/* Precisa ter esse H1 aqui?? */
 header>h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: red;
@@ -25,45 +35,95 @@ header>h1{
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.473);
 }
 
-header>p{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5em;
+header nav a{
+
+    color: var(--cor-clara);
+    text-decoration: none;
+
+    font-weight: bold;
+    font-family: var(--fonte-titulo);
+
+    border: 1px solid var(--cor-clara);
+    border-radius: 5px;
+    padding: 0px 10px;
 }
 
-nav{
-    background-color: white;
-    padding: 1px;
+header nav a:hover{
+
+    border-color:  var(--cor-media);
+    background-color: var(--cor-media);
+    transition-duration: 0.2s;
 }
+
 
 main{
-    background-color: blue;
+    margin: 20px 0px;
+}
+
+main h1{
+    margin: 10px;
+    padding: 10px;
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    background-color: var(--cor-media);
     color: wheat;
 }
 
-a{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+body{
+    background-color: var(--cor-media);
+    background-color: red;
+    
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 0px;
 }
 
-a:hover{
-    colo
-}
-
-section#slide1{
+section#intro{
+    background-color: red;
     color: white;
 }
 
-section#slide2{
+section#origem{
     color:red;
 }
 
-section#slide3{
+section#estudos{
+    background-color: red;
     color:white;
+    text-decoration: none;
+}
+
+section ul{
+    list-style: none;
+    list-style-position: inside;
+    columns: 2;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+section#links{
+    color:white;
+}
+
+cite{
+    color: var(--cor-escura);
+    font-weight: bold;
+    font-size: 2.5em;
 }
 
 footer{
     background-color: yellow;
     text-align: center;
+}
+
+div#copyright{
+    background-color: #1b0f18;
+    text-align: center;
+    color: var(--cor-clara);
+}
+
+div#copyright a{
+    text-decoration: none;
+    color: var(--cor-media);
 }
